@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Accordian</title>
+</head>
+<body>
+<style>
+    body{
+        font-family: "inter";
+    }
+.hidden-box p{
+    line-height: 1.5rem;
+}
+.hidden-box ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.number, .text{
+    color: aqua;
+    font-weight: bold;
+    font-size: 24px;
+}
+.item{
+    width: 700px;
+    margin: 100px auto;
+    box-shadow: 0px 10px 10px black;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    align-items: center;
+}
+.hidden-box{
+    grid-column: 2/3;
+    
+}
+.icon{
+    height: 20px;
+    width: 20px;
+
+}
+.para{
+    width: 700px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+}
+</style>
+    <div class="para">
+    <div class="item">
+        <p class="number">01</p>
+        <P class="text"> Some Movies in which Hero Died</P>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon ">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+          </svg>
+                            
+
+        <div class="hidden-box">
+            <P>Hero died because hero's charater died in script.hero's charater died in 
+                script because writter wrote as hero died.if hero doesn't die, it means 
+                hero doesn't die.</P>
+                <ul>
+                    <li>Hero kochina kashtam</li>
+                    <li>Swargam lo Hero</li>
+                    <li>Hero leni Heroin</li>
+                    <li>Hero Poyadu</li>
+                </ul>
+            </div>
+        </div>
+</div>
+</body>
+</html>
